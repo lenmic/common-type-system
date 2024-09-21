@@ -1,0 +1,36 @@
+{
+  "name": "lenmic/common-type-system",
+  "description": "A PHP library for common data types.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "collection",
+    "tree",
+    "map",
+    "queue",
+    "set"
+  ],
+  "authors": [
+    {
+      "name": "marsov",
+      "email": "marsov@lenmic.de"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "codeception/codeception": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LenMic\\CommonTypeSystem\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LenMic\\CommonTypeSystem\\Test\\": "tests/"
+    }
+  }
+}
