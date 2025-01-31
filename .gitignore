@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+node_modules/
+vendor/
+
+vendor/behat/gherkin/composer.json
