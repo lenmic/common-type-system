@@ -49,15 +49,6 @@ interface NodeInterface
     public function getChildren(): array;
 
     /**
-     * Replace the children set with the given one.
-     *
-     * @param array<int, NodeInterface> $children
-     *
-     * @return NodeInterface<NodeDataType, NodeIdType>
-     */
-    #public function setChildren(array $children): static;
-
-    /**
      * Set the parent node.
      */
     public function setParent(?self $parent = null): void;

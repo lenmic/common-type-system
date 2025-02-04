@@ -8,7 +8,7 @@ use LenMic\CommonTypeSystem\Tree\Visitor\PreOrderFilter;
 /**
  * 
  */
-class Tree implements TreeInterface, QueryableInterface
+class Tree extends AbstractTree implements QueryableInterface
 {
     /**
      * @var NodeInterface[]

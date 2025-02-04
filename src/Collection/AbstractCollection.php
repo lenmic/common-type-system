@@ -9,7 +9,7 @@ use Illuminate\Support\Collection as BaseCollection;
  * @template T
  * @implements CollectionInterface<T>
  */
-abstract class AbstractCollection extends AbstractCtsObject implements CollectionInterface, \Traversable
+abstract class AbstractCollection extends AbstractCtsObject implements CollectionInterface, \IteratorAggregate
 {
     /**
      * @var T[]
@@ -62,5 +62,10 @@ abstract class AbstractCollection extends AbstractCtsObject implements Collectio
     public function first()
     {
         return $this->collection->first();
+    }
+
+    public function getIterator(): \Traversable
+    {
+        return $this->collection->getIterator();
     }
 }
